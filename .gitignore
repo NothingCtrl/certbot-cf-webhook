@@ -1,0 +1,9 @@
+certs
+venv
+.idea
+local_*.bat
+local_*.sh
+renewal_hooks
+!renewal_hooks/demo_hook.sh
+.env
+docker-compose.yml

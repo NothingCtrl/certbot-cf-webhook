@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+    certbot-webhook:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        restart: always
+        container_name: certbot-webhook
+        privileged: true
+        ports:
+            - 9000:9000
+        environment:
+            - PORT=9000
+        network_mode: bridge

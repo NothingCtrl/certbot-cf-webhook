@@ -1,0 +1,7 @@
+local_*.sh
+local_*.bat
+.idea
+.git
+.gitignore
+.dockerignore
+venv
