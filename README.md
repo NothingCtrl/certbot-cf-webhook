@@ -29,7 +29,7 @@ store in `renewal_hooks/` folder (example: script to reload nginx), all scripts 
     source venv/bin/activate
     gunicorn --bind 0.0.0.0:$PORT wsgi:app
     ```
-* On server run `certbot-cf-wildcard` app, add a script to `renewal_hooks`, example:
+* On server run `certbot-cf-wildcard` app, add a script in `renewal_hooks` folder, example:
     ```sh
     #!/bin/bash
     /usr/bin/curl --retry 3 --connect-timeout 10 -A "certbot-cf-wildcard" -H "Authorization: just-me" http://this-server-ip:9000/certbot?domain=foo.bar
